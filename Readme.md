@@ -1,10 +1,7 @@
 ## Notes for AWS command etc
 
 ## Create an EC2 instance
-INSTANCE_ID=$(aws ec2 run-instances \
-  --image-id ami-00e428798e77d38d9 --instance-type t2.micro \
-  --query Instance[].InstanceId --output text )
-  
+INSTANCE_ID=$(aws ec2 run-instances --image-id ami-00e428798e77d38d9 --instance-type t2.micro  --query Instance[].InstanceId --output text )
 
 ## To watch for EC2 instance to be ready run the below wait command
 
