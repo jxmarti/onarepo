@@ -5,4 +5,4 @@ INSTANCE_ID=$(aws ec2 run-instances --image-id ami-00e428798e77d38d9 --instance-
 
 ## To watch for EC2 instance to be ready run the below wait command
 
-aws ec2 wait intance-status-ok --instance-ids $INSTANCE_ID --region us-east-2a
+aws ec2 wait instance-status-ok --instance-ids $INSTANCE_ID
